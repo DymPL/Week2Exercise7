@@ -11,13 +11,13 @@ namespace Week2Exercise7
             //Exe1();
             //Exe2();
             //Exe3();
-            //Exe4(); zrobic
+            //Exe4(); 
             //Exe5();
             //Exe6();
             //Exe7();
             //Exe8();
             //Exe9();
-            Exe10();
+            //Exe10(); zrobic
         }
 
         public static void Exe1()
@@ -68,7 +68,17 @@ namespace Week2Exercise7
 
         public static void Exe4()
         {
+            Console.WriteLine("Podaj liczbę: ");
+            int leap = int.Parse(Console.ReadLine());
 
+            if (leap % 4 == 0 && leap % 100 != 0) 
+            {
+                Console.WriteLine("Rok przestępny");
+            }
+            else
+            {
+                Console.WriteLine("Nie jest");
+            }
         }
 
         public static void Exe5()

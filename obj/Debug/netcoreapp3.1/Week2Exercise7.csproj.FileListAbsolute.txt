@@ -11,3 +11,16 @@ C:\Users\Dymek\source\repos\Week2Exercise7\Week2Exercise7\obj\Debug\netcoreapp3.
 C:\Users\Dymek\source\repos\Week2Exercise7\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.dll
 C:\Users\Dymek\source\repos\Week2Exercise7\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.pdb
 C:\Users\Dymek\source\repos\Week2Exercise7\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.genruntimeconfig.cache
+D:\Csharp\Week2Exercise7\bin\Debug\netcoreapp3.1\Week2Exercise7.exe
+D:\Csharp\Week2Exercise7\bin\Debug\netcoreapp3.1\Week2Exercise7.deps.json
+D:\Csharp\Week2Exercise7\bin\Debug\netcoreapp3.1\Week2Exercise7.runtimeconfig.json
+D:\Csharp\Week2Exercise7\bin\Debug\netcoreapp3.1\Week2Exercise7.runtimeconfig.dev.json
+D:\Csharp\Week2Exercise7\bin\Debug\netcoreapp3.1\Week2Exercise7.dll
+D:\Csharp\Week2Exercise7\bin\Debug\netcoreapp3.1\Week2Exercise7.pdb
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.csprojAssemblyReference.cache
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.AssemblyInfoInputs.cache
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.AssemblyInfo.cs
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.csproj.CoreCompileInputs.cache
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.dll
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.pdb
+D:\Csharp\Week2Exercise7\obj\Debug\netcoreapp3.1\Week2Exercise7.genruntimeconfig.cache

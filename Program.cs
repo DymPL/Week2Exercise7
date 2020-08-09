@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.ExceptionServices;
 
 namespace Week2Exercise7
 {
@@ -6,7 +7,7 @@ namespace Week2Exercise7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Week2Exercise7! \r\n");
 
             //Exe1();
             //Exe2();
@@ -17,7 +18,10 @@ namespace Week2Exercise7
             //Exe7();
             //Exe8();
             //Exe9();
-            //Exe10(); zrobic
+            //Exe10();
+            //Exe11();
+            //Exe12();
+            Exe13();
         }
 
         public static void Exe1()
@@ -197,21 +201,134 @@ namespace Week2Exercise7
             Console.WriteLine("Podaj trzecią długość: ");
             int threeLength = int.Parse(Console.ReadLine());
 
-            if ((firstLength + secondLength > threeLength) && (firstLength<threeLength))
-            {
-                Console.WriteLine("Można zbudować trójkąt");
-            }
-            else if (firstLength + threeLength > secondLength)
-            {
-                Console.WriteLine("Można zbudować trójkąt");
-            }
-            else if (secondLength + threeLength > firstLength)
+            if ((firstLength + secondLength > threeLength) && 
+                (firstLength + threeLength > secondLength) && 
+                (secondLength + threeLength > firstLength))
             {
                 Console.WriteLine("Można zbudować trójkąt");
             }
             else
             {
                 Console.WriteLine("Nie można zbudować trójkąta");
+            }
+        }
+
+        public static void Exe11()
+        {
+            Console.WriteLine("Podaj ocenę: ");
+            int mark = int.Parse(Console.ReadLine());
+
+            switch (mark)
+            {
+                case 1:
+                    Console.WriteLine("Niedostateczny");
+                    break;
+                case 2:
+                    Console.WriteLine("Dopuszczający");
+                    break;
+                case 3:
+                    Console.WriteLine("Dopuszczający");
+                    break;
+                case 4:
+                    Console.WriteLine("Dobry");
+                    break;
+                case 5:
+                    Console.WriteLine("Bardzo dobry");
+                    break;
+                case 6:
+                    Console.WriteLine("Celujący");
+                    break;
+                default:
+                    Console.WriteLine("Nie podałeś dobrej wartości");
+                    break;
+            }
+
+        }
+
+        public static void Exe12()
+        {
+            Console.WriteLine("Podaj numer tygodnia: ");
+            int day = Int32.Parse(Console.ReadLine());
+
+            switch (day)
+            {
+                case 1: 
+                    Console.WriteLine("Poniedziałek");
+                    break;
+                case 2:
+                    Console.WriteLine("Wtorek");
+                    break;
+                case 3:
+                    Console.WriteLine("Środa");
+                    break;
+                case 4:
+                    Console.WriteLine("Czwartek");
+                    break;
+                case 5:
+                    Console.WriteLine("Piątek");
+                    break;
+                case 6:
+                    Console.WriteLine("Sobota");
+                    break;
+                case 7:
+                    Console.WriteLine("Niedziela");
+                    break;
+                default:
+                    Console.WriteLine("Podałeś złą wartość!");
+                    break;
+            }
+        }
+
+        public static void Exe13()
+        {
+            Console.WriteLine("Podaj pierwszą liczbę: ");
+            int firstValue = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj drugą liczbę: ");
+            int secondValue = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj numer operacji do wykonania:");
+            Console.WriteLine("1. Dodawanie");
+            Console.WriteLine("2. Odejmowanie");
+            Console.WriteLine("3. Mnożenie");
+            Console.WriteLine("4. Dzielenie");
+
+            int calc = Int32.Parse(Console.ReadLine());
+
+            switch (calc)
+            {
+                case 1:
+                    int sum = firstValue + secondValue;
+                    Console.WriteLine("Dodawanie \r\n");
+                    Console.WriteLine($"Wynik dodawania: {sum}");
+                    break;
+                case 2:
+                    int difference = firstValue - secondValue;
+                    Console.WriteLine("Odejmowanie \r\n");
+                    Console.WriteLine($"Wynik odejmowania: {difference}");
+                    break;
+                case 3:
+                    int product = firstValue * secondValue;
+                    Console.WriteLine("Mnożenie \r\n");
+                    Console.WriteLine($"Wynik mnożenia: {product}");
+                    break;
+                case 4:
+                    if (secondValue == 0)
+                    {
+                        Console.WriteLine("Pamiętaj cholero, nie dziel przez zero");
+                    }
+
+                    else
+                    {
+                        int quotient = firstValue / secondValue;
+                        Console.WriteLine("Dzielenie \r\n");
+                        Console.WriteLine($"Wynik dzielenia: {quotient}");
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Podałeś złą wartość!");
+                    break;
             }
         }
 

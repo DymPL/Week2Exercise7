@@ -21,7 +21,7 @@ namespace Week2Exercise7
             //Exe10();
             //Exe11();
             //Exe12();
-            Exe13();
+            //Exe13();
         }
 
         public static void Exe1()
@@ -105,7 +105,7 @@ namespace Week2Exercise7
             }
             else
             {
-                Console.WriteLine("Możesz zostać kim chcesz!!!");
+                Console.WriteLine("Możesz zostać kim chcesz ale musisz jeszcze poczekać. :) ");
             }
 
         }
@@ -158,6 +158,25 @@ namespace Week2Exercise7
 
         public static void Exe8()
         {
+            Console.WriteLine("Podaj wynik z matematyki: ");
+            int math = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj wynik z fizyki: ");
+            int physics = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj wynik z chemii: ");
+            int chemistry = Int32.Parse(Console.ReadLine());
+
+            int sum = math + physics + chemistry;
+
+            if ((math > 70 && physics > 55 && chemistry > 45 && sum > 180)||(math + physics > 150 ) ||(math + chemistry >150))
+            { 
+                Console.WriteLine("Kandydat dopuszczony do rekrutacji");
+            }
+            else
+            {
+                Console.WriteLine("Sorry ale nie ");
+            }
 
         }
         public static void Exe9()
